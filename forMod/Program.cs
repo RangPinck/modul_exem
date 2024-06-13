@@ -23,11 +23,16 @@ class Program
             System.Console.WriteLine("До свидания!");
         }
         Console.Clear();
+        System.Console.WriteLine("Укажите путь к файлу с исходными данными и путь куда хотите получить файл с результатом");
+        System.Console.Write("Путь к исходным данным:\t");
+        string fileIn = Console.ReadLine();
+        System.Console.Write("Путь для файла вывода:\t");
+        string fileOut = Console.ReadLine();
         switch (userChoise)
         {
             case 1:
                 System.Console.WriteLine("Вы выбрали метод \"Северо-западный\"");
-
+                Nord_west nord = new Nord_west(fileIn, fileOut);
                 break;
             case 2:
                 System.Console.WriteLine("Вы выбрали метод \"Минимальной стоимости\"");
