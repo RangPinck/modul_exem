@@ -47,6 +47,5 @@ class Program
                 System.Console.WriteLine("До свидания!");
                 break;
         }
-
     }
 }
