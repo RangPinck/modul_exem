@@ -1,0 +1,14 @@
+D:\Progect\ForModulExem\formod\bin\Debug\net7.0\forMod.exe
+D:\Progect\ForModulExem\formod\bin\Debug\net7.0\forMod.deps.json
+D:\Progect\ForModulExem\formod\bin\Debug\net7.0\forMod.runtimeconfig.json
+D:\Progect\ForModulExem\formod\bin\Debug\net7.0\forMod.dll
+D:\Progect\ForModulExem\formod\bin\Debug\net7.0\forMod.pdb
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.GeneratedMSBuildEditorConfig.editorconfig
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.AssemblyInfoInputs.cache
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.AssemblyInfo.cs
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.csproj.CoreCompileInputs.cache
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.dll
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\refint\forMod.dll
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.pdb
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\forMod.genruntimeconfig.cache
+D:\Progect\ForModulExem\formod\obj\Debug\net7.0\ref\forMod.dll
