@@ -22,7 +22,7 @@ class Program
             System.Console.WriteLine("Данного функционала программа не предусматривает!");
             System.Console.WriteLine("До свидания!");
         }
-        Console.Clear();
+        //Console.Clear();
         System.Console.WriteLine("Укажите путь к файлу с исходными данными и путь куда хотите получить файл с результатом");
         System.Console.Write("Путь к исходным данным:\t");
         string fileIn = Console.ReadLine();
@@ -46,11 +46,11 @@ class Program
                 System.Console.WriteLine("Вы выбрали метод \"Дейкстра\"");
 
                 break;
-
             default:
                 System.Console.WriteLine("Данного функционала программа не предусматривает!");
                 System.Console.WriteLine("До свидания!");
-                break;
+                return;
         }
+        System.Console.WriteLine("До свидания!");
     }
 }

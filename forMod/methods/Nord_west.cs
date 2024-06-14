@@ -16,7 +16,7 @@ public class Nord_west
         _fileIn = fileIn;
         _fileOut = fileOut;
         GetData();
-
+        Method();
         PushData();
     }
 
@@ -34,15 +34,18 @@ public class Nord_west
         matrix = new List<List<int?>>();
         while ((line = sr.ReadLine()) != null)
         {
-            foreach (string s in line.Split("\t"))
-                try{
+            foreach (string s in line.Split(' '))
+            {
+                try
+                {
                     temp.Add(int.Parse(s));
                 }
                 catch (System.Exception)
                 {
                     temp.Add(null);
                 }
-                
+            }
+
             matrix.Add(new List<int?>(temp));
             temp.Clear();
         }
@@ -62,22 +65,27 @@ public class Nord_west
     void PushData()
     {
         using StreamWriter sr = new StreamWriter(_fileOut, false, Encoding.UTF8);
-        for (int i = 0; i < matrix.Count; i++)
+        for (int i = 0; i < matrixResult.Count; i++)
         {
-            if (i == 0)
+            foreach (int? value in matrixResult[i])
             {
-                foreach (int? j in matrix[0])
-                    sr.Write(j + "\t");
-
-                sr.WriteLine();
+                sr.Write(value + "\t");
             }
-            else
+            sr.WriteLine();
+        }
+    }
+
+    void Method()
+    {
+        List<int?> temp = new List<int?>();
+
+        for (int i = 1; i < matrix.Count; i++)
+        {
+            for (int j = 1; j < matrix[i].Count; j++)
             {
-                sr.Write(matrix[i][0] + "\t");
-                foreach (int? j in matrixResult[i - 1])
-                    sr.Write(j + "\t");
-                sr.WriteLine();
+                
             }
         }
+
     }
 }

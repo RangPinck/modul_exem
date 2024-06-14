@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kFjpR7AJoIw=",
+  "dgSpecHash": "cIenUQOQKSI=",
   "success": true,
-  "projectFilePath": "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj",
+  "projectFilePath": "D:\\Progect\\ForModulExem\\formod\\forMod.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\chern\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.19\\microsoft.netcore.app.ref.7.0.19.nupkg.sha512",
     "C:\\Users\\chern\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.19\\microsoft.windowsdesktop.app.ref.7.0.19.nupkg.sha512",
