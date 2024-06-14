@@ -16,6 +16,8 @@ public class Nord_west
         _fileIn = fileIn;
         _fileOut = fileOut;
         GetData();
+
+        PushData();
     }
 
     void GetData()
@@ -32,9 +34,15 @@ public class Nord_west
         matrix = new List<List<int?>>();
         while ((line = sr.ReadLine()) != null)
         {
-            foreach (string s in line.Split())
-                temp.Add(int.Parse(s));
-
+            foreach (string s in line.Split("\t"))
+                try{
+                    temp.Add(int.Parse(s));
+                }
+                catch (System.Exception)
+                {
+                    temp.Add(null);
+                }
+                
             matrix.Add(new List<int?>(temp));
             temp.Clear();
         }
@@ -68,7 +76,6 @@ public class Nord_west
                 sr.Write(matrix[i][0] + "\t");
                 foreach (int? j in matrixResult[i - 1])
                     sr.Write(j + "\t");
-
                 sr.WriteLine();
             }
         }
