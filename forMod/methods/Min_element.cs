@@ -82,6 +82,70 @@ public class Min_element
 
     void Method()
     {
-        
+        int indexRow = 0;
+        int indexCol = 0;
+        while (checkToEnd())
+        {
+            GetIndexShipment(ref indexRow, ref indexCol);
+            CreateShipment(indexRow, indexCol);
+        }
+    }
+
+    bool checkToEnd()
+    {
+        for (int i = 1; i < matrix.Count; i++)
+        {
+            if (matrix[i][0]> 0) return false;
+        }
+        for (int i = 1; i < matrix[0].Count; i++)
+        {
+            if (matrix[0][i]> 0) return false;
+        }
+        return true;
+    }
+
+    void GetIndexShipment(ref int indexRow, ref int indexCol)
+    {
+        int? temp = int.MaxValue;
+        for (int i = 1; i < matrix.Count; i++)
+        {
+            for (int j = 1; j < matrix[i].Count; j++)
+            {
+                if (temp > matrix[i][j] && matrix[0][j] > 0 && matrix[i][0] > 0)
+                {
+                    temp = matrix[i][j];
+                    indexCol = j;
+                    indexRow = i;
+                }
+            }
+        }
+    }
+
+    void CreateShipment(int indexRow, int indexCol)
+    {
+        if (matrix[indexRow][0] > matrix[0][indexCol])
+        {
+            matrixResult[indexRow-1][indexCol-1] = matrix[0][indexCol];
+            matrix[indexRow][0] -= matrix[0][indexCol];
+            matrix[0][indexCol] = 0;
+            countResult += matrix[indexRow][indexCol];
+            return;
+        }
+        if (matrix[indexRow][0] < matrix[0][indexCol])
+        {
+            matrixResult[indexRow-1][indexCol-1] = matrix[indexRow][0];
+            matrix[0][indexCol] -= matrix[indexRow][0];
+            matrix[indexRow][0] = 0;
+            countResult += matrix[indexRow][indexCol];
+            return;
+        }
+        if (matrix[indexRow][0] == matrix[0][indexCol])
+        {
+            matrixResult[indexRow-1][indexCol-1] = matrix[indexRow][0];
+            matrix[indexRow][0] = 0;
+            matrix[0][indexCol] = 0;
+            countResult += matrix[indexRow][indexCol];
+            return;
+        }
     }
 }
