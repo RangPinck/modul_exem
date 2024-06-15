@@ -2,7 +2,7 @@
 
 namespace forMod;
 
-public class Nord_west
+public class Min_element
 {
     private List<List<int?>> matrix { get; set; }
     private List<List<int?>> matrixResult { get; set; }
@@ -10,7 +10,7 @@ public class Nord_west
     private string _fileIn { get; set; }
     private string _fileOut { get; set; }
 
-    public Nord_west(string fileIn, string fileOut)
+    public Min_element(string fileIn, string fileOut)
     {
         _fileIn = fileIn;
         _fileOut = fileOut;
@@ -18,7 +18,6 @@ public class Nord_west
         Method();
         PushData();
     }
-
     void GetData()
     {
         if (!File.Exists(_fileIn))
@@ -83,43 +82,6 @@ public class Nord_west
 
     void Method()
     {
-        int indexCustomer = 1;
-        for (int indexProvider = 1; indexProvider < matrix.Count;)
-        {
-            if (indexCustomer == matrix[indexProvider].Count)
-            {
-                return;
-            }
-            for (; indexCustomer < matrix[indexProvider].Count;)
-            {
-                if (matrix[indexProvider][0] > matrix[0][indexCustomer])
-                {
-                    matrixResult[indexProvider - 1][indexCustomer - 1] = matrix[0][indexCustomer];
-                    matrix[indexProvider][0] -= matrix[0][indexCustomer];
-                    matrix[0][indexCustomer] = 0;
-                    countResult += matrix[indexProvider][indexCustomer];
-                    indexCustomer++;
-                }
-                if (matrix[indexProvider][0] < matrix[0][indexCustomer])
-                {
-                    matrixResult[indexProvider - 1][indexCustomer - 1] = matrix[indexProvider][0];
-                    matrix[0][indexCustomer] -= matrix[indexProvider][0];
-                    matrix[indexProvider][0] = 0;
-                    countResult += matrix[indexProvider][indexCustomer];
-                    indexProvider++;
-                    break;
-                }
-                if (matrix[indexProvider][0] == matrix[0][indexCustomer])
-                {
-                    matrixResult[indexProvider - 1][indexCustomer - 1] = matrix[indexProvider][0];
-                    matrix[indexProvider][0] = 0;
-                    matrix[0][indexCustomer] = 0;
-                    countResult += matrix[indexProvider][indexCustomer];
-                    indexProvider++;
-                    indexCustomer++;
-                    break;
-                }
-            }
-        }
+        
     }
 }

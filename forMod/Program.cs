@@ -41,7 +41,7 @@ class Program
                 break;
             case 2:
                 Console.WriteLine("Вы выбрали метод \"Минимальной стоимости\"");
-
+                Min_element me = new Min_element(fileIn, fileOut);
                 break;
             case 3:
                 Console.WriteLine("Вы выбрали метод \"оздание кода Прюфера\"");
