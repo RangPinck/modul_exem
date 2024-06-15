@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progect\\ForModulExem\\formod\\forMod.csproj": {}
+    "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj": {}
   },
   "projects": {
-    "D:\\Progect\\ForModulExem\\formod\\forMod.csproj": {
+    "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progect\\ForModulExem\\formod\\forMod.csproj",
+        "projectUniqueName": "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj",
         "projectName": "forMod",
-        "projectPath": "D:\\Progect\\ForModulExem\\formod\\forMod.csproj",
+        "projectPath": "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj",
         "packagesPath": "C:\\Users\\chern\\.nuget\\packages\\",
-        "outputPath": "D:\\Progect\\ForModulExem\\formod\\obj\\",
+        "outputPath": "D:\\Progect\\ForModulExem\\forMod\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
