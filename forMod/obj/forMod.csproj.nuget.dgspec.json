@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj": {}
+    "D:\\progect\\modul_exem\\formod\\forMod.csproj": {}
   },
   "projects": {
-    "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj": {
+    "D:\\progect\\modul_exem\\formod\\forMod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj",
+        "projectUniqueName": "D:\\progect\\modul_exem\\formod\\forMod.csproj",
         "projectName": "forMod",
-        "projectPath": "D:\\Progect\\ForModulExem\\forMod\\forMod.csproj",
-        "packagesPath": "C:\\Users\\chern\\.nuget\\packages\\",
-        "outputPath": "D:\\Progect\\ForModulExem\\forMod\\obj\\",
+        "projectPath": "D:\\progect\\modul_exem\\formod\\forMod.csproj",
+        "packagesPath": "C:\\Users\\BaX\\.nuget\\packages\\",
+        "outputPath": "D:\\progect\\modul_exem\\formod\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\chern\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\BaX\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

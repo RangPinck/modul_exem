@@ -6,12 +6,12 @@ class Program
     {
         Console.WriteLine("Данная программа работает с методами математического моделирования");
         Console.WriteLine("Выьерите метод по индексу:");
-        System.Console.WriteLine("1. Северо-западный");
-        System.Console.WriteLine("2. Минимальной стоимости");
-        System.Console.WriteLine("3. Создание кода Прюфера");
-        System.Console.WriteLine("4. Дейкстра");
-        System.Console.WriteLine("Другой символ. Выход");
-        System.Console.Write("Ваш выбор:\t");
+        Console.WriteLine("1. Северо-западный");
+        Console.WriteLine("2. Минимальной стоимости");
+        Console.WriteLine("3. Создание кода Прюфера");
+        Console.WriteLine("4. Дейкстра");
+        Console.WriteLine("Другой символ. Выход");
+        Console.Write("Ваш выбор:\t");
         int userChoise = 0;
         try
         {
@@ -19,38 +19,43 @@ class Program
         }
         catch
         {
-            System.Console.WriteLine("Данного функционала программа не предусматривает!");
-            System.Console.WriteLine("До свидания!");
+            Console.WriteLine("Данного функционала программа не предусматривает!");
+            Console.WriteLine("До свидания!");
         }
-        //Console.Clear();
-        System.Console.WriteLine("Укажите путь к файлу с исходными данными и путь куда хотите получить файл с результатом");
-        System.Console.Write("Путь к исходным данным:\t");
+        if (userChoise < 1 && userChoise > 4)
+        {
+            Console.WriteLine("Данного функционала программа не предусматривает!");
+            Console.WriteLine("До свидания!");
+            return;
+        }
+        Console.WriteLine("Укажите путь к файлу с исходными данными и путь куда хотите получить файл с результатом");
+        Console.Write("Путь к исходным данным:\t");
         string fileIn = Console.ReadLine();
-        System.Console.Write("Путь для файла вывода:\t");
+        Console.Write("Путь для файла вывода:\t");
         string fileOut = Console.ReadLine();
         switch (userChoise)
         {
             case 1:
-                System.Console.WriteLine("Вы выбрали метод \"Северо-западный\"");
+                Console.WriteLine("Вы выбрали метод \"Северо-западный\"");
                 Nord_west nord = new Nord_west(fileIn, fileOut);
                 break;
             case 2:
-                System.Console.WriteLine("Вы выбрали метод \"Минимальной стоимости\"");
+                Console.WriteLine("Вы выбрали метод \"Минимальной стоимости\"");
 
                 break;
             case 3:
-                System.Console.WriteLine("Вы выбрали метод \"оздание кода Прюфера\"");
+                Console.WriteLine("Вы выбрали метод \"оздание кода Прюфера\"");
 
                 break;
             case 4:
-                System.Console.WriteLine("Вы выбрали метод \"Дейкстра\"");
+                Console.WriteLine("Вы выбрали метод \"Дейкстра\"");
 
                 break;
             default:
-                System.Console.WriteLine("Данного функционала программа не предусматривает!");
-                System.Console.WriteLine("До свидания!");
+                Console.WriteLine("Данного функционала программа не предусматривает!");
+                Console.WriteLine("До свидания!");
                 return;
         }
-        System.Console.WriteLine("До свидания!");
+        Console.WriteLine("До свидания!");
     }
 }
