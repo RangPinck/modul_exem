@@ -21,6 +21,7 @@ class Program
         {
             Console.WriteLine("Данного функционала программа не предусматривает!");
             Console.WriteLine("До свидания!");
+            return;
         }
         if (userChoise < 1 && userChoise > 4)
         {
