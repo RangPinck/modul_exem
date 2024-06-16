@@ -53,8 +53,7 @@ public class Prupher
         {
             //минимальное значенеи, которое только одно в списке рёбер
             List<int> temp = new List<int>(listEdges);
-            temp = temp.Where(x => temp.Where(y => y == x).Count() == 1).ToList();
-            exp = temp.Min();
+            exp = temp.Where(x => temp.Where(y => y == x).Count() == 1).ToList().Min();
             //получаем индекс элемента
             indexExp =listEdges.IndexOf(exp);
             //определяем соседа
