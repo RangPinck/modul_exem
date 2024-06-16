@@ -21,6 +21,7 @@ class Program
         {
             Console.WriteLine("Данного функционала программа не предусматривает!");
             Console.WriteLine("До свидания!");
+            return;
         }
         if (userChoise < 1 && userChoise > 4)
         {
@@ -44,8 +45,8 @@ class Program
                 Min_element me = new Min_element(fileIn, fileOut);
                 break;
             case 3:
-                Console.WriteLine("Вы выбрали метод \"оздание кода Прюфера\"");
-
+                Console.WriteLine("Вы выбрали метод \"Создание кода Прюфера\"");
+                Prupher pr = new Prupher(fileIn, fileOut);
                 break;
             case 4:
                 Console.WriteLine("Вы выбрали метод \"Дейкстра\"");
