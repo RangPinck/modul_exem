@@ -44,7 +44,7 @@ class Program
                 Min_element me = new Min_element(fileIn, fileOut);
                 break;
             case 3:
-                Console.WriteLine("Вы выбрали метод \"оздание кода Прюфера\"");
+                Console.WriteLine("Вы выбрали метод \"Создание кода Прюфера\"");
 
                 break;
             case 4:
