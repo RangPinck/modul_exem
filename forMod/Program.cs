@@ -45,7 +45,7 @@ class Program
                 break;
             case 3:
                 Console.WriteLine("Вы выбрали метод \"Создание кода Прюфера\"");
-
+                Prupher pr = new Prupher(fileIn, fileOut);
                 break;
             case 4:
                 Console.WriteLine("Вы выбрали метод \"Дейкстра\"");
