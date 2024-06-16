@@ -95,13 +95,13 @@ public class Min_element
     {
         for (int i = 1; i < matrix.Count; i++)
         {
-            if (matrix[i][0]> 0) return false;
+            if (matrix[i][0]> 0) return true;
         }
         for (int i = 1; i < matrix[0].Count; i++)
         {
-            if (matrix[0][i]> 0) return false;
+            if (matrix[0][i]> 0) return true;
         }
-        return true;
+        return false;
     }
 
     void GetIndexShipment(ref int indexRow, ref int indexCol)
